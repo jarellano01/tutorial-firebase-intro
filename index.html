@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebase Tutorial</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="menu">
+    <div class="name">Firebase Chat App</div>
+    <div class="last">18:09</div>
+</div>
+<ol class="chat">
+    <li class="other">
+        <div class="avatar"><img src="http://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Hola!</p>
+            <p>Te vienes a cenar al centro?
+                <emoji class="pizza"/>
+            </p>
+            <time>20:17</time>
+        </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="http://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Puff...</p>
+            <p>Aún estoy haciendo el contexto de Góngora...
+                <emoji class="books"/>
+            </p>
+            <p>Mejor otro día</p>
+            <time>20:18</time>
+        </div>
+    </li>
+    <li class="other">
+        <div class="avatar"><img src="http://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Qué contexto de Góngora?
+                <emoji class="suffocated"/>
+            </p>
+            <time>20:18</time>
+        </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="http://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+        <div class="msg">
+            <p>El que mandó Marialu</p>
+            <p>Es para mañana...</p>
+            <time>20:18</time>
+        </div>
+    </li>
+    <li class="other">
+        <div class="avatar"><img src="http://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+        <div class="msg">
+            <p>
+                <emoji class="scream"/>
+            </p>
+            <p>Pásamelo!
+                <emoji class="please"/>
+            </p>
+            <time>20:18</time>
+        </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="http://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+        <div class="msg">
+            <img src="http://i.imgur.com/QAROObc.jpg" draggable="false"/>
+            <time>20:19</time>
+        </div>
+    </li>
+    <li class="other">
+        <div class="avatar"><img src="http://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Gracias!
+                <emoji class="hearth_blue"/>
+            </p>
+            <time>20:20</time>
+        </div>
+    </li>
+    <div class="day">Hoy</div>
+    <li class="self">
+        <div class="avatar"><img src="http://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Te apetece jugar a Minecraft?</p>
+            <time>18:03</time>
+        </div>
+    </li>
+    <li class="other">
+        <div class="avatar"><img src="http://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Venga va, hace ya mucho que no juego...</p>
+            <time>18:07</time>
+        </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="http://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Ehh, me crashea el Launcher...
+                <emoji class="cryalot"/>
+            </p>
+            <time>18:08</time>
+        </div>
+    </li>
+    <li class="other">
+        <div class="avatar"><img src="http://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+        <div class="msg">
+            <p>
+                <emoji class="lmao"/>
+            </p>
+            <time>18:08</time>
+        </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="http://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Es broma</p>
+            <p>Ataque Moai!</p>
+            <p><span><emoji class="moai"/></span><span><emoji class="moai"/></span><span><emoji
+                    class="moai"/></span><span><emoji class="moai"/></span><span><emoji class="moai"/></span><span><emoji
+                    class="moai"/></span></p>
+            <time>18:09</time>
+        </div>
+    </li>
+    <li class="other">
+        <div class="avatar"><img src="http://i.imgur.com/DY6gND0.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Copón</p>
+            <p>
+                <emoji class="funny"/>
+            </p>
+            <time>18:08</time>
+        </div>
+    </li>
+    <li class="self">
+        <div class="avatar"><img src="http://i.imgur.com/HYcn9xO.png" draggable="false"/></div>
+        <div class="msg">
+            <p>Hey there's a new update about this chat UI with more responsive elements! Check it now:</p>
+            <p><a href="http://codepen.io/Varo/pen/YPmwpQ" target="parent">Chat UI 2.0</a></p>
+            <time>18:09</time>
+        </div>
+    </li>
+</ol>
+<input class="textarea" type="text" placeholder="Type here!"/>
+<div class="emojis"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
