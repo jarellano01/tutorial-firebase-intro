@@ -224,6 +224,7 @@ Finally we can start coding out our logic. Let's start inside of `js/firebase.js
         return false;
     });
     ```
+    
 ### 5. Guess What!!!
     
 At this point we are done. You might be thinking how is that all?!?!?!? 
