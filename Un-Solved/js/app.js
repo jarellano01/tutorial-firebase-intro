@@ -20,7 +20,7 @@ function newMessage(message, username, time) {
 }
 
 function scrollToBottom() {
-    $(".messages").animate({scrollTop: $(this)[0].scrollHeight}, 1000);
+    $(".messages").animate({scrollTop: $(".messages")[0].scrollHeight}, 1000);
 }
 
 

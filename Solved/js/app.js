@@ -1,5 +1,6 @@
 var curUser = prompt("Please enter a username", "jigglybrain") || 'unknown';
 
+
 $('.username').html(curUser);
 // helper functions
 
@@ -16,11 +17,11 @@ function newMessage(message, username, time) {
     }
 
     $('.messages > ul').append($("<li class='li-" + position + "'><span class='li-message'>" + message + "</span><span class='li-username'>- " + username + " | " + time + "</span></li>"));
-    $(".messages").animate({scrollTop: $(this)[0].scrollHeight}, 1000);
+
 }
 
 function scrollToBottom() {
-    $(".messages").animate({scrollTop: $(this)[0].scrollHeight}, 1000);
+    $(".messages").animate({scrollTop: $(".messages")[0].scrollHeight}, 1000);
 }
 
 
@@ -34,6 +35,7 @@ function updateUI(messages) {
 
         newMessage(messages[key].message, messages[key].username, messages[key].time);
     }
+
 
     scrollToBottom();
 }
