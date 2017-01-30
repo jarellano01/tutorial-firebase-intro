@@ -3,9 +3,10 @@
 //                             Run this when ever the data object is updated.
 //                             For Firebase, add it as a callback to an on value change once
 //
+// curUser -- use this variable to get the username of the current user
+// $("#message-input").val() -- use this jquery selector to get the current message. Be sure to clear the message after sending
 
-
-//This is a sample object which acts like the object which we will receive from firebase. Currently the app pushes to this object therefore when the app is refreshed, it is reset. Once we integrate Firebase, this object will no longer be required.
+// This is a sample object which acts like the object which we will receive from firebase. Currently the app pushes to this object therefore when the app is refreshed, it is reset. Once we integrate Firebase, this object will no longer be required.
 var sampleMessagesObject = {
     "1": {
         "message": "Hello EveryOne",
@@ -60,7 +61,3 @@ $("#send").click(function () {
     return false;
 
 });
-
-
-
-
